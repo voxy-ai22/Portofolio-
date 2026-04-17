@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexa Dev — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-layer"></div>
+  <div class="bg-overlay"></div>
+  <div class="bg-noise"></div>
+
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <i class="fas fa-code"></i>
+      Nexa
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"     class="active" data-i18n="nav_home">Home</a></li>
+      <li><a href="#about"    data-i18n="nav_about">About</a></li>
+      <li><a href="#skills"   data-i18n="nav_skills">Skills</a></li>
+      <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+      <li><a href="#contact"  data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <button class="lang-btn" id="langBtn" aria-label="Switch Language">
+      <i class="fas fa-globe"></i>
+      <span id="langLabel">ID</span>
+    </button>
+    <a href="#contact" class="nav-cta" data-i18n="nav_cta">
+      Let's Talk <i class="fas fa-arrow-right"></i>
+    </a>
+    <div class="nav-mobile-btn" id="menuBtn" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ══════ HERO ══════ -->
+  <section class="hero" id="home">
+    <div class="hero-badge reveal">
+      <span class="status-dot"></span>
+      <span data-i18n="hero_badge">about me</span>
+    </div>
+    <h1 class="hero-title reveal stagger-1">
+      Nexa <span class="gradient-text">Dev</span>
+    </h1>
+    <p class="hero-subtitle reveal stagger-2" data-i18n="hero_sub">
+      Frontend Developer &amp; UI Designer. Crafting pixel-perfect, immersive web experiences with modern technologies.
+    </p>
+    <div class="hero-cta reveal stagger-3">
+      <a href="#projects" class="btn-primary" data-i18n="hero_cta1">View My Work <i class="fas fa-arrow-down"></i></a>
+      <a href="#contact"  class="btn-ghost"   data-i18n="hero_cta2">Get In Touch <i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="scroll-indicator reveal stagger-4">
+      <span data-i18n="scroll_hint">SCROLL DOWN</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════ ABOUT ══════ -->
+  <section id="about">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-user"></i> <span data-i18n="about_tag">About Me</span></div>
+      <h2 class="section-title">Meet <span>Nexa</span></h2>
+    </div>
+    <div class="about-content">
+      <div class="about-text reveal-left">
+        <h3 data-i18n="about_heading">Frontend Developer &amp; UI Enthusiast</h3>
+        <p data-i18n="about_p1">
+          Hi, I'm Nexa Dev — a passionate frontend developer who loves crafting beautiful, responsive, and high-performance web interfaces. I specialize in turning complex ideas into stunning digital realities.
+        </p>
+        <p data-i18n="about_p2">
+          With expertise in React, Next.js, and modern CSS frameworks, I build seamless user experiences that not only look amazing but also perform flawlessly across all devices.
+        </p>
+        <div class="about-stats">
+          <div class="stat-item reveal stagger-1"><i class="fas fa-rocket"></i><span class="num">50+</span><span class="label" data-i18n="stat1">Projects Done</span></div>
+          <div class="stat-item reveal stagger-2"><i class="fas fa-clock"></i><span class="num">3+</span><span class="label" data-i18n="stat2">Years Exp.</span></div>
+          <div class="stat-item reveal stagger-3"><i class="fas fa-heart"></i><span class="num">100%</span><span class="label" data-i18n="stat3">Satisfaction</span></div>
+          <div class="stat-item reveal stagger-4"><i class="fas fa-coffee"></i><span class="num">∞</span><span class="label" data-i18n="stat4">Coffee Consumed</span></div>
+        </div>
+      </div>
+      <div class="about-visual reveal-right">
+        <div class="avatar-container">
+          <div class="avatar-glow"></div>
+          <div class="avatar-frame">
+            <img src="https://c.termai.cc/i106/ZgxUuu.jpg" alt="Nexa Dev" class="avatar-img" loading="lazy">
+          </div>
+          <div class="floating-elements">
+            <div class="float-icon"><i class="fab fa-react"></i></div>
+            <div class="float-icon"><i class="fab fa-js"></i></div>
+            <div class="float-icon"><i class="fab fa-css3-alt"></i></div>
+          </div>
+          <div class="avatar-badge"><i class="fas fa-circle-check"></i> <span data-i18n="badge_open">Open to Work</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════ SKILLS ══════ -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-layer-group"></i> <span data-i18n="skills_tag">Skills</span></div>
+      <h2 class="section-title">My <span data-i18n="skills_title_hl">Expertise</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal stagger-1" data-level="95">
+        <div class="skill-icon"><i class="fab fa-react"></i></div>
+        <h3 data-i18n="sk1_title">React Ecosystem</h3>
+        <p data-i18n="sk1_desc">Building dynamic user interfaces with React, Next.js, and modern hooks architecture.</p>
+        <div class="skill-tags"><span>React</span><span>Next.js</span><span>Hooks</span><span>Context</span></div>
+        <div class="skill-level"><div class="skill-level-bar"><div class="skill-level-fill"></div></div></div>
+      </div>
+      <div class="skill-card reveal stagger-2" data-level="90">
+        <div class="skill-icon"><i class="fab fa-js"></i></div>
+        <h3 data-i18n="sk2_title">JavaScript &amp; TypeScript</h3>
+        <p data-i18n="sk2_desc">Writing clean, type-safe code with modern ES6+ features and TypeScript integration.</p>
+        <div class="skill-tags"><span>ES6+</span><span>TypeScript</span><span>Async/Await</span><span>DOM API</span></div>
+        <div class="skill-level"><div class="skill-level-bar"><div class="skill-level-fill"></div></div></div>
+      </div>
+      <div class="skill-card reveal stagger-3" data-level="92">
+        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+        <h3 data-i18n="sk3_title">Styling &amp; Animation</h3>
+        <p data-i18n="sk3_desc">Creating beautiful, responsive designs with Tailwind, SCSS, and smooth animations.</p>
+        <div class="skill-tags"><span>Tailwind</span><span>SCSS</span><span>Framer</span><span>GSAP</span></div>
+        <div class="skill-level"><div class="skill-level-bar"><div class="skill-level-fill"></div></div></div>
+      </div>
+      <div class="skill-card reveal stagger-4" data-level="85">
+        <div class="skill-icon"><i class="fas fa-mobile-screen"></i></div>
+        <h3 data-i18n="sk4_title">Responsive Design</h3>
+        <p data-i18n="sk4_desc">Building mobile-first experiences that work flawlessly across all devices.</p>
+        <div class="skill-tags"><span>Mobile First</span><span>Flexbox</span><span>Grid</span><span>PWA</span></div>
+        <div class="skill-level"><div class="skill-level-bar"><div class="skill-level-fill"></div></div></div>
+      </div>
+      <div class="skill-card reveal stagger-5" data-level="80">
+        <div class="skill-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+        <h3 data-i18n="sk5_title">UI/UX Design</h3>
+        <p data-i18n="sk5_desc">Designing intuitive interfaces in Figma with focus on user experience.</p>
+        <div class="skill-tags"><span>Figma</span><span>Prototyping</span><span>Design Sys</span><span>Wireframe</span></div>
+        <div class="skill-level"><div class="skill-level-bar"><div class="skill-level-fill"></div></div></div>
+      </div>
+      <div class="skill-card reveal stagger-1" data-level="75">
+        <div class="skill-icon"><i class="fas fa-cube"></i></div>
+        <h3 data-i18n="sk6_title">3D &amp; Graphics</h3>
+        <p data-i18n="sk6_desc">Adding immersive 3D experiences with Three.js and WebGL technologies.</p>
+        <div class="skill-tags"><span>Three.js</span><span>WebGL</span><span>Blender</span><span>GLSL</span></div>
+        <div class="skill-level"><div class="skill-level-bar"><div class="skill-level-fill"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════ PROJECTS ══════ -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-folder-open"></i> <span data-i18n="proj_tag">Projects</span></div>
+      <h2 class="section-title">Featured <span data-i18n="proj_title_hl">Works</span></h2>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal stagger-1">
+        <div class="project-image">
+          <img src="https://c.termai.cc/i120/w2F.jpg" alt="Reaction Channel WhatsApp" loading="lazy">
+          <div class="project-overlay"></div>
+          <div class="project-links">
+            <a href="#" class="project-link" title="View Live"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-num">01 / AUTOMATION</div>
+          <h3 data-i18n="p1_title">Reaction Channel WhatsApp</h3>
+          <p data-i18n="p1_desc">Auto-reaction bot for WhatsApp channels with custom emoji responses, scheduled reactions, and analytics dashboard.</p>
+          <div class="project-tags"><span>PHP</span></div>
+        </div>
+      </div>
+      <div class="project-card reveal stagger-2">
+        <div class="project-image">
+          <img src="https://c.termai.cc/i149/SoqWk.jpg" alt="Loby FF & HD Gambar" loading="lazy">
+          <div class="project-overlay"></div>
+          <div class="project-links">
+            <a href="#" class="project-link" title="View Live"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-num">02 / GAME TOOLS</div>
+          <h3 data-i18n="p2_title">NEXA Lobby Generator</h3>
+          <p data-i18n="p2_desc">Free Fire lobby generator with HD image export, custom nickname styling, and MLBB support. Features real-time preview.</p>
+          <div class="project-tags"><span>Vue.js</span><span>Canvas API</span><span>HTML2Canvas</span><span>Vite</span></div>
+        </div>
+      </div>
+      <div class="project-card reveal stagger-3">
+        <div class="project-image">
+          <img src="https://c.termai.cc/i138/PcvAhP.jpg" alt="All Downloader Media Sosial" loading="lazy">
+          <div class="project-overlay"></div>
+          <div class="project-links">
+            <a href="#" class="project-link" title="View Live"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-num">03 / DOWNLOADER</div>
+          <h3 data-i18n="p3_title">All Media Downloader</h3>
+          <p data-i18n="p3_desc">Universal social media downloader supporting TikTok, Instagram, YouTube, and Twitter. Features HD quality and batch download.</p>
+          <div class="project-tags"><span>PHP</span><span>API Integration</span><span>PWA</span><span>TypeScript</span></div>
+        </div>
+      </div>
+      <div class="project-card reveal stagger-4">
+        <div class="project-image">
+          <img src="https://c.termai.cc/i117/ASP6xQB.jpg" alt="IGC Generator" loading="lazy">
+          <div class="project-overlay"></div>
+          <div class="project-links">
+            <a href="#" class="project-link" title="View Live"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-num">04 / GENERATOR</div>
+          <h3 data-i18n="p4_title">NEXA IQC Generator</h3>
+          <p data-i18n="p4_desc">iPhone Quote Card generator with customizable templates, font styling, and instant download. Features server health monitoring.</p>
+          <div class="project-tags"><span>React</span><span>Canvas</span><span>Framer Motion</span><span>Supabase</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════ CONTACT ══════ -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-paper-plane"></i> <span data-i18n="contact_tag">Contact</span></div>
+      <h2 class="section-title" data-i18n="contact_title">Let's Build Something <span>Amazing</span></h2>
+    </div>
+    <div class="contact-content">
+      <div class="contact-info reveal-left">
+        <h2 data-i18n="contact_h2">Have a project in mind?</h2>
+        <p data-i18n="contact_p">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div><label data-i18n="ci_email">Email</label><span>Email Kamu</span></div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-location-dot"></i>
+            <div><label data-i18n="ci_loc">Location</label><span>Indonesia (WIB)</span></div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div><label data-i18n="ci_resp">Response Time</label><span data-i18n="ci_resp_val">Within 24 hours</span></div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="contact-card reveal-right">
+        <div class="contact-card-content">
+          <h3><i class="fas fa-bolt" style="color:var(--accent);margin-right:.5rem;"></i> <span data-i18n="quick_contact">Quick Contact</span></h3>
+          <div class="email-display"><i class="fas fa-at"></i>Email Kamu</div>
+          <div class="availability-status">
+            <i class="fas fa-circle-check"></i>
+            <span data-i18n="avail_status">Contact me</span>
+          </div>
+          <a href="mailto:hello@nexadev.id" class="btn-primary" style="width:100%;justify-content:center;">
+            <span data-i18n="send_email">Send Email</span> <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo"><i class="fas fa-code"></i> Nexa Dev</div>
+      <p class="footer-text">
+        © 2026 Nexa Dev. <span data-i18n="footer_made">Made with</span> <span class="footer-heart"><i class="fas fa-heart"></i></span> <span data-i18n="footer_coffee">and lots of coffee</span>
+      </p>
+      <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i> <span data-i18n="back_top">Back to Top</span></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
